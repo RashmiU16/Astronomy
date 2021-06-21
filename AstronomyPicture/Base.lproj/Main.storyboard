@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AstronomyPicture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kLK-vp-Os2">
+                                <rect key="frame" x="34" y="92" width="347" height="305"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="305" id="5Dl-kP-EbR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxI-xt-0rY">
+                                <rect key="frame" x="20" y="54" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="SC5-0Y-9vD">
+                                <rect key="frame" x="20" y="434" width="374" height="430"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Picture explanation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldq-Y3-02Y">
+                                <rect key="frame" x="20" y="406" width="374" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kLK-vp-Os2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="2iy-Zt-Biq"/>
+                            <constraint firstItem="Ldq-Y3-02Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="64Q-yE-6Sn"/>
+                            <constraint firstItem="yxI-xt-0rY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="88M-pu-4sX"/>
+                            <constraint firstItem="yxI-xt-0rY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9QI-RK-Dmj"/>
+                            <constraint firstItem="SC5-0Y-9vD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bgw-cE-OLB"/>
+                            <constraint firstItem="SC5-0Y-9vD" firstAttribute="top" secondItem="Ldq-Y3-02Y" secondAttribute="bottom" constant="8.5" id="QIy-Aq-k2z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kLK-vp-Os2" secondAttribute="trailing" constant="33" id="Qd5-9m-3nL"/>
+                            <constraint firstItem="kLK-vp-Os2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="TRF-AF-BnA"/>
+                            <constraint firstItem="SC5-0Y-9vD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="2" id="VBz-BB-qJy"/>
+                            <constraint firstItem="Ldq-Y3-02Y" firstAttribute="top" secondItem="kLK-vp-Os2" secondAttribute="bottom" constant="9" id="cqS-9b-PHx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ldq-Y3-02Y" secondAttribute="trailing" constant="20" id="iI9-Dj-D7v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SC5-0Y-9vD" secondAttribute="trailing" constant="20" id="jKy-hG-gr4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yxI-xt-0rY" secondAttribute="trailing" constant="20" id="raI-hn-ZrV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="atronomyPicture" destination="kLK-vp-Os2" id="bad-Rq-5A8"/>
+                        <outlet property="explanationLabel" destination="Ldq-Y3-02Y" id="HbU-Zo-TUP"/>
+                        <outlet property="pictureDescriptionTV" destination="SC5-0Y-9vD" id="ITS-Ts-Hea"/>
+                        <outlet property="pictureTitleLabel" destination="yxI-xt-0rY" id="oSq-0D-554"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
